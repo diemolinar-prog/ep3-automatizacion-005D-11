@@ -1,0 +1,12 @@
+=== VALIDACION NETCONF ===
+Alumno: Molina Romero Diego Esteban
+Fecha: 2026-06-10 16:33:01.092792
+Host: labvm
+[OK] Hostname
+[OK] Loopback IP
+[OK] Mascara
+[OK] WAN Desc
+[OK] NTP
+
+Resultado: 5/5
+CONFORME
