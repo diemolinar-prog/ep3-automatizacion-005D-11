@@ -1,109 +1,118 @@
-# 🚀 Automatización de Red con Cisco CSR1000v
+<!-- PORTADA -->
+
+<h1 align="center">🚀 Network Automation Project</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Cisco-IOS%20XE-blue?style=for-the-badge&logo=cisco" />
-  <img src="https://img.shields.io/badge/Python-3.8+-yellow?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Automation-Ansible-red?style=for-the-badge&logo=ansible" />
-  <img src="https://img.shields.io/badge/API-NETCONF%20%7C%20RESTCONF-green?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Testing-pyATS%20%7C%20Genie-purple?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge" />
+  <b>Cisco CSR1000v | Automation | Validation | DevNet</b>
 </p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Cisco-IOS%20XE-blue?style=for-the-badge&logo=cisco"/>
+  <img src="https://img.shields.io/badge/Python-3.8+-yellow?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/Automation-Ansible-red?style=for-the-badge&logo=ansible"/>
+  <img src="https://img.shields.io/badge/API-NETCONF%20%7C%20RESTCONF-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Testing-pyATS%20%7C%20Genie-purple?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge"/>
+</p>
+
+---
+
+## 🎬 Demo del Proyecto
+
+<p align="center">
+  <img src="https://media.giphy.com/media/L8K62iTDkzGX6/giphy.gif" width="600"/>
+</p>
+
+> 🔎 Simulación de automatización, validación y control de red en entorno Cisco
 
 ---
 
 ## 👨‍💻 Autor
 
 **Diego Molina**
-🔗 GitHub: https://github.com/diemolinar-prog
+🔗 https://github.com/diemolinar-prog
 
 ---
 
-## 📌 Descripción
+## 🧠 Visión del Proyecto
 
-Este proyecto implementa un flujo completo de **automatización de red** sobre un router **Cisco CSR1000v**, integrando herramientas modernas utilizadas en entornos reales de ingeniería:
+Este proyecto representa un flujo completo de **automatización de red moderna**, integrando herramientas utilizadas en entornos profesionales:
 
-* Automatización con **Ansible**
-* Validación con **NETCONF / RESTCONF**
-* Testing con **pyATS / Genie**
-* Control de versiones con **Git**
-
----
-
-## 🎯 Objetivos
-
-✔️ Capturar estado inicial de red (Baseline)
-✔️ Automatizar configuraciones de red
-✔️ Validar cambios mediante APIs
-✔️ Generar evidencia técnica reproducible
-✔️ Aplicar buenas prácticas DevNet
+* Infraestructura como código
+* Validación automatizada
+* APIs de red
+* Testing de estado
 
 ---
 
-## 🧱 Arquitectura del Proyecto
+## ⚡ Flujo de Automatización
 
-```bash
-ep3-automatizacion-005D-11/
-│
-├── fase1_baseline/                # Estado inicial del router
-├── fase2_aprovisionamiento/      # Configuración automatizada (Ansible)
-├── fase3_validacion_netconf/     # Validación con NETCONF
-├── fase4_validacion_restconf/    # Validación con RESTCONF
-├── fase5_reporte/                # Evidencia final
-│   └── evidencias/
-│
-└── playbook_005D-11.yaml         # Playbook principal
+```mermaid
+graph TD
+A[Baseline] --> B[Ansible Provisioning]
+B --> C[NETCONF Validation]
+C --> D[RESTCONF Validation]
+D --> E[Final Report]
 ```
 
 ---
 
-## ⚙️ Tecnologías Utilizadas
+## 🧱 Arquitectura
 
-| Tecnología    | Uso                     |
-| ------------- | ----------------------- |
-| Python 3      | Scripts de validación   |
-| Ansible       | Automatización          |
-| pyATS / Genie | Testing y baseline      |
-| NETCONF       | Validación estructurada |
-| RESTCONF      | Validación vía API      |
-| SSH           | Acceso remoto           |
-| Git           | Control de versiones    |
-
----
-
-## 🧪 Desarrollo por Fases
-
-### 🔹 Fase 1: Baseline
-
-* Captura del estado inicial del router
-* Uso de pyATS para inventario y conexión
+```bash
+ep3-automatizacion-005D-11/
+│
+├── fase1_baseline/
+├── fase2_aprovisionamiento/
+├── fase3_validacion_netconf/
+├── fase4_validacion_restconf/
+├── fase5_reporte/
+│   └── evidencias/
+│
+└── playbook_005D-11.yaml
+```
 
 ---
 
-### 🔹 Fase 2: Aprovisionamiento
+## 🛠️ Stack Tecnológico
 
-Automatización con Ansible:
-
-✔️ Hostname
-✔️ Banner
-✔️ NTP
-✔️ Interfaz WAN
-✔️ Loopback
-✔️ NETCONF / RESTCONF
-
-✔️ **Configuración idempotente validada**
+| Categoría            | Herramienta        |
+| -------------------- | ------------------ |
+| Automatización       | Ansible            |
+| Testing              | pyATS / Genie      |
+| APIs                 | NETCONF / RESTCONF |
+| Lenguaje             | Python             |
+| Red                  | Cisco IOS XE       |
+| Control de versiones | Git                |
 
 ---
 
-### 🔹 Fase 3: Validación NETCONF
+## 🔥 Features Implementadas
 
-Validación automatizada de:
+✔️ Configuración automática de router
+✔️ Idempotencia garantizada
+✔️ Validación por API
+✔️ Snapshot de estado
+✔️ Comparación de configuraciones
+✔️ Reporte final automatizado
+
+---
+
+## 🧪 Validaciones
+
+### ✔️ NETCONF
 
 * Hostname
 * Loopback
 * WAN
 * NTP
 
-📌 Resultado:
+### ✔️ RESTCONF
+
+* Interfaces
+* Configuración
+
+📌 Resultado global:
 
 ```bash
 CONFORME
@@ -111,26 +120,11 @@ CONFORME
 
 ---
 
-### 🔹 Fase 4: Validación RESTCONF
+## 📊 Snapshot Final
 
-Validación mediante API REST:
+Debido a limitación de pyATS con banners personalizados:
 
-✔️ Estado de interfaces
-✔️ Configuración aplicada
-
-📌 Resultado:
-
-```bash
-CONFORME
-```
-
----
-
-### 🔹 Fase 5: Reporte Final
-
-#### 📊 Snapshot Final
-
-Debido a incompatibilidad de **Genie con banner personalizado**, se utilizó validación manual:
+✔️ Se realizó captura manual validada:
 
 ```bash
 show ip interface brief
@@ -138,42 +132,36 @@ show running-config
 show ip route
 ```
 
-📄 Evidencia:
-
-```bash
-fase5_reporte/evidencias/snapshot_final_manual.txt
-```
-
----
-
-#### 🔍 Comparación (Diff)
-
-Cambios detectados:
-
-* Hostname → RTR-SEGPROV
-* Loopback10 → 10.5.11.1
-* WAN activa vía DHCP
-* NTP configurado
-* NETCONF / RESTCONF habilitados
-* Banner de seguridad aplicado
-
 📄 Archivo:
 
 ```bash
-diff_005D-11.txt
+snapshot_final_manual.txt
 ```
 
 ---
 
-## ⚠️ Consideración Técnica
+## 🔍 Cambios Detectados
 
-El módulo **Genie Learn** presentó problemas de conexión debido a:
+* Hostname → RTR-SEGPROV
+* Loopback → 10.5.11.1
+* WAN vía DHCP
+* NTP activo
+* APIs habilitadas
+* Banner de seguridad
 
-* Banner personalizado
-* Manejo de prompts en IOS XE
+---
 
-✔️ Se implementó solución alternativa mediante evidencia CLI
-✔️ En entornos reales, esta práctica es válida
+## 🧠 Troubleshooting Real
+
+Problema:
+
+* Incompatibilidad de **Genie + banner IOS XE**
+
+Solución:
+
+* Validación manual con evidencia CLI
+
+✔️ Enfoque profesional aplicado
 
 ---
 
@@ -190,21 +178,33 @@ ESTADO: CONFORME
 
 ## 🚀 Habilidades Demostradas
 
-* Automatización de redes Cisco
-* Uso de APIs (NETCONF / RESTCONF)
+* Network Automation
+* API Networking
 * Troubleshooting real
-* Integración de herramientas DevNet
-* Documentación técnica profesional
+* DevNet workflow
+* Git & documentación
+
+---
+
+## 📈 Perfil Profesional
+
+Este proyecto demuestra capacidades en:
+
+✔️ Ingeniería de redes moderna
+✔️ Automatización empresarial
+✔️ Validación y testing
+✔️ Resolución de problemas reales
 
 ---
 
 ## 📬 Contacto
 
-💻 GitHub: https://github.com/diemolinar-prog
+🔗 GitHub: https://github.com/diemolinar-prog
 
 ---
 
 <p align="center">
-  <b>✔️ Proyecto completado exitosamente</b><br>
-  <i>Automatización, validación y documentación de red de nivel profesional</i>
+  <b>🔥 Proyecto listo para portafolio profesional</b><br>
+  <i>Network Automation • DevNet • Cisco Engineering</i>
 </p>
+
