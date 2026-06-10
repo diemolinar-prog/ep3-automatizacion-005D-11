@@ -1,0 +1,56 @@
+- name: Aprovisionamiento Router SEGPROV
+  hosts: routers
+  gather_facts: no
+
+  vars_files:
+    - ../vars/vars_005D-11.yaml
+
+  tasks:
+
+    - name: Backup running-config
+      ios_command:
+        commands: show running-config
+      register: backup_config
+
+    - name: Guardar backup
+      copy:
+        content: "{{ backup_config.stdout[0] }}"
+        dest: "respaldo/backup_{{ alumno.codigo }}.cfg"
+
+    - name: Habilitar NETCONF
+      ios_config:
+        lines:
+          - netconf-yang
+
+    - name: Habilitar RESTCONF
+      ios_config:
+        lines:
+          - restconf
+          - ip http secure-server
+
+    - name: Configurar hostname
+      ios_config:
+        lines:
+          - hostname {{ cliente.hostname }}
+
+    - name: Configurar banner
+      ios_config:
+        lines:
+          - banner motd #{{ router.banner }}#
+
+    - name: Configurar NTP
+      ios_config:
+        lines:
+          - ntp server {{ router.ntp_server }}
+
+    - name: Configurar interfaz WAN
+      ios_config:
+        parents: interface GigabitEthernet1
+        lines:
+          - description {{ router.descripcion_wan }}
+
+    - name: Configurar Loopback
+      ios_config:
+        parents: interface Loopback{{ router.loopback_id }}
+        lines:
+          - ip address {{ router.loopback_ip }} {{ router.loopback_mask }}

@@ -1,0 +1,25 @@
+
+PLAY [Aprovisionamiento Router SEGPROV] ****************************************
+
+TASK [Backup running-config] ***************************************************
+ok: [csr1kv]
+
+TASK [Guardar backup] **********************************************************
+changed: [csr1kv]
+
+TASK [Habilitar NETCONF] *******************************************************
+changed: [csr1kv]
+
+TASK [Habilitar RESTCONF] ******************************************************
+changed: [csr1kv]
+
+TASK [Configurar hostname] *****************************************************
+changed: [csr1kv]
+
+TASK [Configurar banner] *******************************************************
+An exception occurred during task execution. To see the full traceback, use -vvv. The error was: RTR-SEGPROV(config)#
+fatal: [csr1kv]: FAILED! => {"changed": false, "module_stderr": "Traceback (most recent call last):\n  File \"/home/devasc/.ansible/tmp/ansible-local-3278puda0jnx/ansible-tmp-1781108511.4892025-3436-15172943941013/AnsiballZ_ios_config.py\", line 102, in <module>\n    _ansiballz_main()\n  File \"/home/devasc/.ansible/tmp/ansible-local-3278puda0jnx/ansible-tmp-1781108511.4892025-3436-15172943941013/AnsiballZ_ios_config.py\", line 94, in _ansiballz_main\n    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)\n  File \"/home/devasc/.ansible/tmp/ansible-local-3278puda0jnx/ansible-tmp-1781108511.4892025-3436-15172943941013/AnsiballZ_ios_config.py\", line 40, in invoke_module\n    runpy.run_module(mod_name='ansible.modules.network.ios.ios_config', init_globals=None, run_name='__main__', alter_sys=True)\n  File \"/usr/lib/python3.8/runpy.py\", line 206, in run_module\n    return _run_module_code(code, init_globals, run_name, mod_spec)\n  File \"/usr/lib/python3.8/runpy.py\", line 96, in _run_module_code\n    _run_code(code, mod_globals, init_globals,\n  File \"/usr/lib/python3.8/runpy.py\", line 86, in _run_code\n    exec(code, run_globals)\n  File \"/tmp/ansible_ios_config_payload_mcbd6lgt/ansible_ios_config_payload.zip/ansible/modules/network/ios/ios_config.py\", line 569, in <module>\n  File \"/tmp/ansible_ios_config_payload_mcbd6lgt/ansible_ios_config_payload.zip/ansible/modules/network/ios/ios_config.py\", line 500, in main\n  File \"/tmp/ansible_ios_config_payload_mcbd6lgt/ansible_ios_config_payload.zip/ansible/modules/network/ios/ios_config.py\", line 364, in edit_config_or_macro\n  File \"/tmp/ansible_ios_config_payload_mcbd6lgt/ansible_ios_config_payload.zip/ansible/module_utils/connection.py\", line 185, in __rpc__\nansible.module_utils.connection.ConnectionError: banner motd\r\nbanner motd\r\n% Incomplete command.\r\n\r\nRTR-SEGPROV(config)#\n", "module_stdout": "", "msg": "MODULE FAILURE\nSee stdout/stderr for the exact error", "rc": 1}
+
+PLAY RECAP *********************************************************************
+csr1kv                     : ok=5    changed=4    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
