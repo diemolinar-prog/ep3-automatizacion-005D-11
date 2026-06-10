@@ -1,0 +1,19 @@
+alumno:
+  codigo: "005D-11"
+  nombre: "Molina Romero Diego Esteban"
+
+cliente:
+  empresa: "Seguros Providencia Ltda"
+  hostname: "RTR-SEGPROV"
+
+router:
+  ip: "192.168.56.102"
+  usuario: "cisco"
+  password: "cisco123!"
+  loopback_id: 10
+  loopback_ip: "10.5.11.1"
+  loopback_mask: "255.255.255.0"
+  loopback_prefix: "24"
+  descripcion_wan: "Enlace-WAN-Arica"
+  banner: "ACCESO RESTRINGIDO - SEGPROV"
+  ntp_server: "9.9.9.9"
