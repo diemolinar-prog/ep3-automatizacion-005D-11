@@ -1,0 +1,15 @@
+Comparación Baseline vs Configuración Final
+
+Cambios detectados:
+
+- Hostname cambiado a RTR-SEGPROV
+- Se configuró interfaz Loopback10 con IP 10.5.11.1
+- Se configuró interfaz WAN con IP dinámica (DHCP)
+- Se configuró servidor NTP
+- Se habilitaron servicios NETCONF y RESTCONF
+- Se agregó banner de acceso restringido
+
+Resultado:
+Configuración aplicada correctamente y validada.
+
+ESTADO: CONFORME

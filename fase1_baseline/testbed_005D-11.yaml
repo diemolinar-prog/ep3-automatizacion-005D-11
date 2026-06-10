@@ -11,5 +11,7 @@ devices:
         protocol: ssh
         ip: 192.168.56.102
         port: 22
-        arguments:
-          ssh_options: -o KexAlgorithms=diffie-hellman-group14-sha1
+        command: "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o KexAlgorithms=diffie-hellman-group14-sha1 cisco@192.168.56.102"
+        settings:
+          PROMPT: "RTR-SEGPROV#"
+       

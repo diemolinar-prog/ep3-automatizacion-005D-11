@@ -1,0 +1,51 @@
+RTR-SEGPROV#show ip interface brief
+Interface              IP-Address      OK? Method Status                Protocol
+GigabitEthernet1       192.168.56.102  YES DHCP   up                    up      
+Loopback10             10.5.11.1       YES manual up                    up      
+RTR-SEGPROV#show running-config    
+Building configuration...
+
+Current configuration : 3595 bytes
+!
+! Last configuration change at 16:29:20 UTC Wed Jun 10 2026 by cisco
+!
+version 16.9
+service config
+service timestamps debug datetime msec
+service timestamps log datetime msec
+platform qfp utilization monitor load 80
+no platform punt-keepalive disable-kernel-core
+platform console virtual
+!
+hostname RTR-SEGPROV
+!
+boot-start-marker
+boot-end-marker
+!
+!
+no logging console
+!
+no aaa new-model
+!
+!
+!
+          
+RTR-SEGPROV#show ip route
+Codes: L - local, C - connected, S - static, R - RIP, M - mobile, B - BGP
+       D - EIGRP, EX - EIGRP external, O - OSPF, IA - OSPF inter area 
+       N1 - OSPF NSSA external type 1, N2 - OSPF NSSA external type 2
+       E1 - OSPF external type 1, E2 - OSPF external type 2
+       i - IS-IS, su - IS-IS summary, L1 - IS-IS level-1, L2 - IS-IS level-2
+       ia - IS-IS inter area, * - candidate default, U - per-user static route
+       o - ODR, P - periodic downloaded static route, H - NHRP, l - LISP
+       a - application route
+       + - replicated route, % - next hop override, p - overrides from PfR
+
+Gateway of last resort is not set
+
+      10.0.0.0/8 is variably subnetted, 2 subnets, 2 masks
+C        10.5.11.0/24 is directly connected, Loopback10
+L        10.5.11.1/32 is directly connected, Loopback10
+      192.168.56.0/24 is variably subnetted, 2 subnets, 2 masks
+C        192.168.56.0/24 is directly connected, GigabitEthernet1
+L        192.168.56.102/32 is directly connected, GigabitEthernet

@@ -1,0 +1,64 @@
+[2026-06-10 16:36:18,847] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:36:18,847] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:36:18,967] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 140634108718096 +++
+[2026-06-10 16:36:18,967] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#[2026-06-10 16:39:43,685] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:39:43,685] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:39:43,810] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 140004066249984 +++
+[2026-06-10 16:39:43,810] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+RTR-SEGPROV#[2026-06-10 16:42:44,488] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:42:44,488] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:42:44,608] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 139882477088000 +++
+[2026-06-10 16:42:44,608] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#[2026-06-10 16:45:25,249] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:45:25,250] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:45:25,372] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 140485961960704 +++
+[2026-06-10 16:45:25,372] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#[2026-06-10 16:50:38,512] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:50:38,512] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:50:38,638] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 139922243796224 +++
+[2026-06-10 16:50:38,638] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#[2026-06-10 16:51:57,372] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:51:57,372] +++ Unicon plugin iosxe +++
+Password: 
+[2026-06-10 16:51:57,486] +++ connection to spawn: ssh -l cisco 192.168.56.102 -p 22, id: 139631884328192 +++
+[2026-06-10 16:51:57,486] connection to CSR1kv
+
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#[2026-06-10 16:58:11,922] +++ CSR1kv logfile evidencias/snapshot_final/connection_CSR1kv.txt +++
+[2026-06-10 16:58:11,922] +++ Unicon plugin iosxe +++
+Warning: Permanently added '192.168.56.102' (RSA) to the list of known hosts.
+
+[2026-06-10 16:58:11,979] +++ connection to spawn: ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o KexAlgorithms=diffie-hellman-group14-sha1 cisco@192.168.56.102, id: 140637950586112 +++
+[2026-06-10 16:58:11,979] connection to CSR1kv
+Password: 
+ACCESO RESTRINGIDO - SEGPROV
+
+
+RTR-SEGPROV#
