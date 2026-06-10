@@ -36,21 +36,25 @@
     - name: Configurar banner
       ios_config:
         lines:
-          - banner motd #{{ router.banner }}#
+          - banner motd ^{{ router.banner }}^
+      when: false
 
     - name: Configurar NTP
       ios_config:
         lines:
           - ntp server {{ router.ntp_server }}
+        match: line
 
     - name: Configurar interfaz WAN
       ios_config:
         parents: interface GigabitEthernet1
         lines:
           - description {{ router.descripcion_wan }}
+        match: line
 
     - name: Configurar Loopback
       ios_config:
         parents: interface Loopback{{ router.loopback_id }}
         lines:
           - ip address {{ router.loopback_ip }} {{ router.loopback_mask }}
+        match: line

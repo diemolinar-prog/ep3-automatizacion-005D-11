@@ -1,0 +1,4 @@
+- name: Configurar banner
+  ios_config:
+    lines:
+      - banner motd ^{{ router.banner }}^

@@ -17,7 +17,7 @@ TASK [Configurar hostname] *****************************************************
 ok: [csr1kv]
 
 TASK [Configurar banner] ************************************************************
-changed: [csr1kv]
+skipping: [csr1kv]
 
 TASK [Configurar NTP] ***************************************************************
 ok: [csr1kv]
@@ -29,5 +29,5 @@ TASK [Configurar Loopback] *****************************************************
 ok: [csr1kv]
 
 PLAY RECAP **************************************************************************
-csr1kv                     : ok=9    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+csr1kv                     : ok=8    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
 
