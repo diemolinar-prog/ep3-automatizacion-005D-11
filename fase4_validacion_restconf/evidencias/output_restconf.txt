@@ -1,0 +1,8 @@
+=== VALIDACION RESTCONF ===
+[OK] Hostname
+[OK] Loopback
+[OK] WAN
+[OK] NTP
+
+Resultado: 4/4
+CONFORME
