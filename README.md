@@ -29,7 +29,7 @@
 
 ## 👨‍💻 Autor
 
-**Diego Molina**
+**Diego Esteban Molina Romero**
 🔗 https://github.com/diemolinar-prog
 
 ---
