@@ -204,7 +204,6 @@ Este proyecto demuestra capacidades en:
 ---
 
 <p align="center">
-  <b>🔥 Proyecto listo para portafolio profesional</b><br>
   <i>Network Automation • DevNet • Cisco Engineering</i>
 </p>
 
